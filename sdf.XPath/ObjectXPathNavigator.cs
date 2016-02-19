@@ -885,7 +885,10 @@ namespace sdf.XPath
 			}
 		}
 
-		public override object UnderlyingObject
+        /// <summary>
+        /// Retrieves the root object for this navigator instance.
+        /// </summary>
+        public override object UnderlyingObject
 		{
 			get
 			{

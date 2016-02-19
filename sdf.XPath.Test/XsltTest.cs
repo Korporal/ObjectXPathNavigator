@@ -30,7 +30,7 @@ namespace sdf.XPath.Test
 
 				</xsl:stylesheet>
 			" );
-			XslTransform xslt = new XslTransform();
+			var xslt = new XslCompiledTransform();
 			xslt.Load( xsltDoc );
 			StringBuilder builder = new StringBuilder();
 			XmlWriter writer = new XmlTextWriter( new StringWriter( builder ));
@@ -67,7 +67,7 @@ namespace sdf.XPath.Test
 
 				</xsl:stylesheet>
 			" );
-			XslTransform xslt = new XslTransform();
+			var xslt = new XslCompiledTransform();
 			xslt.Load( xsltDoc );
 
 			StringBuilder builder = new StringBuilder();

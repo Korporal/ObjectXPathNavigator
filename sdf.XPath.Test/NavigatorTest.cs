@@ -128,7 +128,7 @@ namespace sdf.XPath.Test
 		{
 			DateTime date = new DateTime( 2004, 8, 18, 19, 46, 13 );
 			//string dStr = ConvertDate( date );
-			string dStr = XmlConvert.ToString( date );
+			string dStr = XmlConvert.ToString( date, XmlDateTimeSerializationMode.Utc);
 
 			Compare( Product.Create(), @"
 				<sdf:product id='7' name='Red button' xmlns:sdf='http://www.byte-force.com/schemas/SDF'>

@@ -78,7 +78,7 @@ namespace sdf.XPath.Test
 
 				</xsl:stylesheet>
 			" );
-			XslTransform xslt = new XslTransform();
+			var xslt = new XslCompiledTransform();
 			xslt.Load( xsltDoc );
 
 			CollectionOfSimple c = new CollectionOfSimple( true );

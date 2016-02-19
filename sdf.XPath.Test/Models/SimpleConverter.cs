@@ -12,7 +12,7 @@ namespace sdf.XPath.Test.Models
 
 		public string ToString( object obj )
 		{
-			return XmlConvert.ToString( (DateTime)obj );
+			return XmlConvert.ToString( (DateTime)obj, XmlDateTimeSerializationMode.Utc);
 		}
 
 		public object ParseString( string str )
